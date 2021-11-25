@@ -2,7 +2,7 @@ import * as THREE from "three";
 import { useRef, useEffect } from "react";
 
 let images = {
-  back: "https://gateway.ipfs.io/ipfs/QmPNYgYd4PurtWs4vX2rghZ8MLH9SY5Zqm882spfnLgMwK",
+  back: "https://gateway.ipfs.io/ipfs/QmRSAsKEKTXgbtEMvUUxrH8rfav4rGXJyzfueYQLwksTQ7",
   bump: "https://gateway.ipfs.io/ipfs/QmXdmk8bJgCofbY692v2Sfy2j6dyXcqJEsxd92fG4tHUZ1",
   edge: "https://gateway.ipfs.io/ipfs/QmSUzx2qFy8au1ucrkyH5PLAECtBhEyQrQaZEWRAJ6wB9e",
   front:

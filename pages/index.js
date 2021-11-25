@@ -76,7 +76,7 @@ export default function Home() {
       <div className="label">StyleSeek Records</div>
       <Box />
       <header className="App-header">
-        <Image src={Logo} className="logo" />
+        {/*         <Image src={Logo} className="logo" /> */}
 
         <h1>Dat punk debut album</h1>
         <h2>{totalSales} / 100 sold</h2>
