@@ -1,11 +1,13 @@
-import { web3, contract, sharedMessage } from '../../lib/web3';
+import { web3, contract, sharedMessage } from '../../lib/web3'
 
 const notOk = (res) => {
   res.status(403).json({ url: null })
 }
 
 const ok = (res) => {
-  res.status(200).json({ url: "https://ipfs.io/ipfs/Qma399gy9xZg47shLuEtNmcfgyxh86e71dCMkQJ6gV418j/prism-download.zip" })
+  res.status(200).json({
+    url: 'https://ipfs.infura.io/ipfs/QmdnCSokz7Pyyh5T4Asvgko7gpfCKYFpvr6k7vFGoA1RZ9',
+  })
 }
 
 export default async function handler(req, res) {
@@ -20,7 +22,9 @@ export default async function handler(req, res) {
 
     const account = web3.eth.accounts.recover(sharedMessage, body.signature)
 
-    contract.methods.hasAccess().call({ from: account })
+    contract.methods
+      .hasAccess()
+      .call({ from: account })
       .then(function (data) {
         if (data) {
           ok(res)
@@ -28,7 +32,6 @@ export default async function handler(req, res) {
           notOk(res)
         }
       })
-
   } catch (e) {
     notOk(res)
   }
