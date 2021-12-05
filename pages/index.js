@@ -77,7 +77,7 @@ export default function Home() {
 
         window.location.href = json.url
       } catch (e) {
-        alert('incorrect download url')
+        alert(e)
       }
     } else {
       alert('must be logged in')

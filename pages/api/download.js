@@ -1,12 +1,12 @@
 import { web3, contract, sharedMessage } from '../../lib/web3'
 
 const notOk = (res) => {
-  res.status(403).json({ url: null })
+  res.status(403).json({ url: 'null' })
 }
 
 const ok = (res) => {
   res.status(200).json({
-    url: 'https://ipfs.infura.io/ipfs/QmdnCSokz7Pyyh5T4Asvgko7gpfCKYFpvr6k7vFGoA1RZ9',
+    url: 'https://bafybeia7rsevkel4xfowaxb5muy4vkji4xk47covnda35exeogrl6uvkfu.ipfs.dweb.link/bullfest.mp3',
   })
 }
 
