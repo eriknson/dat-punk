@@ -6,7 +6,7 @@ const notOk = (res) => {
 
 const ok = (res) => {
   res.status(200).json({
-    url: 'https://bafybeia7rsevkel4xfowaxb5muy4vkji4xk47covnda35exeogrl6uvkfu.ipfs.dweb.link/bullfest.mp3',
+    url: 'https://bafybeia7rsevkel4xfowaxb5muy4vkji4xk47covnda35exeogrl6uvkfu.ipfs.infura-ipfs.io/bullfest.mp3',
   })
 }
 
